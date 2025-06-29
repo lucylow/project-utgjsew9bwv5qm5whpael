@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Twitter, Github, Discord, Linkedin } from 'lucide-react';
+import { ExternalLink, Twitter, Github, MessageCircle, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -27,7 +27,7 @@ const Footer = () => {
                 <Github size={24} />
               </a>
               <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">
-                <Discord size={24} />
+                <MessageCircle size={24} />
               </a>
               <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">
                 <Linkedin size={24} />
@@ -35,7 +35,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* ... keep existing code (Quick Links and Resources sections) */}
           <div>
             <h4 className="text-white font-semibold mb-4">Platform</h4>
             <ul className="space-y-2">
@@ -46,7 +46,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Resources */}
           <div>
             <h4 className="text-white font-semibold mb-4">Resources</h4>
             <ul className="space-y-2">
@@ -58,7 +57,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Stats Section */}
+        {/* ... keep existing code (Stats Section, BSC Scan Widget, Bottom Bar, and Powered By sections) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 p-6 bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl border border-gray-700">
           <div className="text-center">
             <div className="text-2xl font-bold text-yellow-400 mb-1">1,427</div>
@@ -76,7 +75,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* BSC Scan Widget */}
         <div className="bg-gradient-to-r from-yellow-900 to-orange-900 p-6 rounded-2xl border border-yellow-500/30 mb-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div>
@@ -105,7 +103,6 @@ const Footer = () => {
             </div>
           </div>
           
-          {/* Recent Transactions */}
           <div className="mt-4 space-y-2">
             <div className="text-yellow-300 text-sm font-semibold">Recent Transactions:</div>
             {[
@@ -122,7 +119,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-400 text-sm mb-4 md:mb-0">
             © {currentYear} SONOVATE AI Studios. All rights reserved.
@@ -135,7 +131,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Powered By */}
         <div className="text-center mt-8 pt-8 border-t border-gray-800">
           <div className="text-gray-500 text-sm">
             Powered by cutting-edge AI and blockchain technology
