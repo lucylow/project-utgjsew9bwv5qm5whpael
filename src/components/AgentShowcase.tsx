@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Scroll, MessageSquare, Clapperboard, Mask, Link, Sparkles, Sliders } from 'lucide-react';
+import { Scroll, MessageSquare, Clapperboard, User, Link, Sparkles, Sliders } from 'lucide-react';
 
 const AgentShowcase = () => {
   const [selectedAgent, setSelectedAgent] = useState(0);
@@ -13,7 +13,7 @@ const AgentShowcase = () => {
       icon: Scroll,
       feature: "Generates Hero's Journey structure from single prompt",
       description: "Automatically generate detailed story prompts and scripts, reducing the time and effort required for writers to develop original content.",
-      interactive: "Type genre → See beat sheet",
+      interactive: "Type genre  See beat sheet",
       color: 'from-yellow-400 to-yellow-600'
     },
     {
@@ -22,7 +22,7 @@ const AgentShowcase = () => {
       icon: MessageSquare,
       feature: "Character-specific dialogue with personality matrix",
       description: "Create character-specific dialogue that matches personality profiles and speaking patterns.",
-      interactive: "Select character → Generate dialogue",
+      interactive: "Select character  Generate dialogue",
       color: 'from-cyan-400 to-cyan-600'
     },
     {
@@ -37,7 +37,7 @@ const AgentShowcase = () => {
     {
       id: 3,
       title: 'Deepfake Casting Agent',
-      icon: Mask,
+      icon: User,
       feature: "Emotion-controlled actor performances",
       description: "Generate realistic deepfake performances with precise emotion control and facial expressions.",
       interactive: "Emotion slider controls performance",
