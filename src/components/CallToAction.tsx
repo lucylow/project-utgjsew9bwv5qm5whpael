@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Sparkles, Download, Play, ArrowRight, Film, Wand2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const CallToAction = () => {
   const [movieIdea, setMovieIdea] = useState('');
@@ -157,6 +158,14 @@ const CallToAction = () => {
                     {feature}
                   </div>
                 ))}
+              </div>
+              <div className="mt-6 text-center">
+                <Link 
+                  to="/pricing" 
+                  className="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-lg font-bold transition-all duration-300 hover:scale-105"
+                >
+                  View Pricing Plans
+                </Link>
               </div>
             </div>
           </div>
